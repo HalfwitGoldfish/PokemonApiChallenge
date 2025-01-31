@@ -24,6 +24,6 @@
  
  Have a Prototype in Figma (Desktop, Tablet, Mobile)
 
- *Reviewers Name*
+ *Reviewers Name*:
 
- *Peer Review*
+ *Peer Review*:
