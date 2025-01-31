@@ -24,6 +24,9 @@
  
  Have a Prototype in Figma (Desktop, Tablet, Mobile)
 
- *Reviewers Name*: Brock 
+*Reviewers Name*: Brock 
 
- *Peer Review*: The responsiveness of the project is spot on and I love how the background image changes based on what breakpoint you are at. Every challenge looks to have been completed and the site itself looks really sick! Great job overall I love the site
+*Peer Review*: The responsiveness of the project is spot on and I love how the background image changes based on what breakpoint you are at. Every challenge looks to have been completed and the site itself looks really sick! Great job overall I love the site
+
+*Note*:
+ My evolution line is an altered version of Kassie's, big thanks to her for her help
