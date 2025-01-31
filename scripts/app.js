@@ -65,7 +65,7 @@ const pokeData = async (data) =>
 
     const evoDataBase = evoData.chain.species.name;
     const evoDataChain = evoData.chain.evolves_to;
-    
+
     // Figuring out the evolution line was thanks to Kass helping me
     let evoList = [];
     if ( evoDataChain.length > 0 )
@@ -106,12 +106,19 @@ const pokeData = async (data) =>
         pokemonEvolution.innerText = "N/A";
     }
 
-    if ( evoList.includes( pokemonName.innerText ) )
+    if ( evoDataBase === "eevee" )
+    {
+        let rng = Math.floor( Math.random() * (evoList.length - 1 + 1) ) + 1;
+        pokemonEvolution.innerText = evoList[evoList.indexOf( pokemonName.innerText ) + rng];
+    }else if ( evoList.includes( pokemonName.innerText ) )
     {
         pokemonEvolution.innerText = evoList[evoList.indexOf( pokemonName.innerText ) + 1];
     }
 
     if ( pokemonEvolution.innerText === "undefined" )
+    {
+        pokemonEvolution.innerText = "N/A";
+    }else if ( pokemonName.innerText === "Vaporeon" )
     {
         pokemonEvolution.innerText = "N/A";
     }
