@@ -108,7 +108,7 @@ const pokeData = async (data) =>
 
     if ( evoDataBase === "eevee" )
     {
-        let rng = Math.floor( Math.random() * (evoList.length - 1 + 1) ) + 1;
+        let rng = Math.floor( Math.random() * (evoList.length - 1) ) + 1;
         pokemonEvolution.innerText = evoList[evoList.indexOf( pokemonName.innerText ) + rng];
     }else if ( evoList.includes( pokemonName.innerText ) )
     {
@@ -118,7 +118,7 @@ const pokeData = async (data) =>
     if ( pokemonEvolution.innerText === "undefined" )
     {
         pokemonEvolution.innerText = "N/A";
-    }else if ( pokemonName.innerText === "Vaporeon" )
+    }else if ( evoList[0] === "Eevee" && pokemonName.innerText !== "Eevee" )
     {
         pokemonEvolution.innerText = "N/A";
     }
